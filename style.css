@@ -1,0 +1,1122 @@
+@font-face {
+  font-family: TitilliumWeb;
+  src: url(assets/fonts/Titillium_Web/TitilliumWeb-Regular.ttf);
+}
+
+@font-face {
+  font-family: TitilliumWeb;
+  src: url(assets/fonts/Titillium_Web/TitilliumWeb-Bold.ttf);
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: TitilliumWeb;
+  src: url(assets/fonts/Titillium_Web/TitilliumWeb-SemiBold.ttf);
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: Malaga-OT-Reg-Italic;
+  src: url(assets/fonts/Malaga/Malaga-OT-Reg-Italic.ttf);
+}
+
+body {
+top: 0;
+bottom: 0;
+}
+
+h1 {
+  font-family: TitilliumWeb;
+  font-weight: 400;
+  color: rgb(99, 99, 99);
+}
+
+h2 {
+  font-family: TitilliumWeb;
+  font-weight: 400;
+  color: rgb(69, 69, 69);
+}
+
+h3 {
+  font-family: TitilliumWeb;
+  font-weight: 400;
+}
+
+p {
+  font-family: TitilliumWeb;
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+
+a {
+  text-decoration: none;
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 1rem 0 1rem;
+}
+
+.logo > span {
+  display: flex;
+  flex-direction: row;
+}
+
+.logo > span >  p {
+  font-weight: 600;
+  font-size: 2rem;
+  color: rgb(133, 134, 136);
+  margin: 0;
+}
+
+.logo > span >  p:nth-child(2) {
+  color: rgb(88, 44, 126);
+}
+
+.language {
+  display: flex;
+  font-family: TitilliumWeb;
+  font-size: 0.8rem;
+  color: rgb(92, 92, 92);
+}
+
+.lang-list {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  flex: 1 0 auto;
+  padding: 0;
+  margin: 1rem 1rem 1rem 1rem;
+  justify-content: center;
+}
+
+.lang-list li+li:before {
+  padding: 0 1rem 0 1rem;
+  color: rgb(92, 92, 92);
+  content: "/\00a0";
+}
+
+
+.lang-list > li {
+  display: flex;
+  flex: 1 0 auto;
+  justify-content: center;
+}
+
+.lang-list > li > a:hover {
+  font-weight: bold;
+}
+
+.menu-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.menu-list > li {
+  flex: 1 0 auto;
+  text-align: start;
+}
+
+
+.menu-list > li > a {
+  display: block;
+  background: rgb(97, 108, 194);
+  font-family: TitilliumWeb;
+  font-size: 1rem;
+  border-radius: 28px;
+  color: white;
+  padding: 0.6em 1em;
+  margin: 0.2rem 0 0.2rem 0;
+}
+
+
+.menu-list > li > a:hover {
+  text-decoration: underline;
+}
+
+.log {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem 0 1rem 0;
+}
+
+.log-buttons {
+  display: flex;
+  width: 11.3rem;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.sign-up {
+  border: none;
+  border-radius: 28px;
+  width: 90px;
+  height: 40px;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  background-color: rgb(88, 44, 126);
+  transition: all 1s;
+
+}
+
+.sign-up:hover {
+  background-color:  rgb(97, 108, 194);
+}
+
+
+.log-in {
+  background-color: transparent;
+  border: none;
+  width: 90px;
+  height: 40px;
+  color: rgb(92, 92, 92);
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.log-in:hover {
+  color: rgb(88, 44, 126);
+}
+
+
+.log-in > i {
+  color: rgb(88, 44, 126);
+}
+
+.banner-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container-description {
+  display: grid;
+  margin: 0 auto 0 auto;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  font-family: TitilliumWeb;
+  width: 17rem;
+}
+
+.description-box {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  margin: 1rem 0 1rem 0;
+  padding: 0 1rem 0 1rem;
+}
+
+.icon-box {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  justify-self: center;
+  align-self: center;
+}
+
+.subtitle-box {
+  font-size: 0.8rem;
+  color: rgb(176, 176, 176);
+}
+
+.text-promo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: TitilliumWeb;
+  
+}
+
+.text-promo > p {
+  color: rgb(92, 92, 92);
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+span {
+  color: rgb(252, 68, 75);
+}
+
+.text-promo > h1 {
+  margin-bottom: 0;
+}
+
+.text-promo > p {
+  margin: 0.5rem 0 0.5rem 0;
+}
+
+.text-box {
+  display: none;
+}
+
+.join-area {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-family: TitilliumWeb;
+  justify-content: space-evenly;
+  width: 16rem;
+  margin: 1rem 0 1rem 0;
+}
+
+.create-account {
+  background-color: 
+    rgb(88, 44, 126);
+  transition: all 1s;
+  border: none;
+  border-radius: 28px;
+  width: 140px;
+  height: 40px;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.create-account:hover {
+  background-color: white;
+  color:rgb(88, 44, 126);
+}
+
+
+.app-store > a,
+.google-play > a {
+  background-image: linear-gradient(
+    to right,
+    rgb(88, 44, 126) 0%,
+    rgb(97, 108, 194) 100%
+  );
+  border: none;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.app-store > a:hover, .google-play > a:hover {
+  width: 37px;
+  height: 37px;
+}
+
+.physical-security-banner {
+  display: grid;
+  width: 15rem;
+  margin: 2rem auto 2rem auto;
+  grid-template-columns: 1fr;
+  grid-template-rows: 50px auto 70px;
+}
+
+.banner-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner-text {
+  grid-row-start: 2;
+  grid-row-end: 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner-text > p {
+  text-align: left;
+  text-align: center;
+}
+
+.learn-more {
+  grid-row-start: 3;
+  grid-row-end: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.learn-more-button {
+  background-color: transparent;
+  transition: all 1s;
+  border-radius: 28px;
+  border: 2px solid gray;
+  width: 12rem;
+  height: 40px;
+  color: gray;
+  text-align: center;
+  text-decoration: none;
+}
+
+.learn-more-button:hover {
+  background-image: linear-gradient(
+    to right,
+    rgb(65, 170, 240) 0%,
+    rgb(87, 105, 243) 100%
+  );
+  color: white;
+  border: none;
+}
+
+
+blockquote > p {
+  font-family: Malaga-OT-Reg-Italic;
+}
+
+.quote {
+  font-size: 1rem;
+  font-family: Malaga-OT-Reg-Italic;
+  font-style: italic;
+  margin: 1rem auto 1rem auto;
+  width: 15rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.quote :nth-child(2) {
+  display: flex;
+  align-self: flex-start;
+  font-size: 0.8rem;
+  color: gray;
+}
+
+.banner-section-store,
+.banner-section-store,
+.banner-section-support {
+  width: 15rem;
+  margin: 2rem auto 2rem auto;
+  font-family: TitilliumWeb;
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: rgb(92, 92, 92);
+}
+
+.banner-section-store {
+  text-align: center;
+  color: rgb(92, 92, 92);
+}
+
+.banner-section-store > p {
+  text-align: left;
+}
+
+.banner-section-support > h2 {
+  text-align: center;
+}
+
+.support-buttons,
+.store-buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.store-buttons > div {
+  margin: 1rem;
+}
+
+.upgrade-paid-paln,
+.donate {
+  border: none;
+  border-radius: 28px;
+  width: 180px;
+  height: 40px;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 0.3rem;
+  border: none;
+  background-size: 300% 100%;
+
+  background-image: linear-gradient(to right, #440694, #9a40e4, #6227ec, #09a2fa);
+    box-shadow: 0 4px 15px 0 rgba(93, 4, 153, 0.75);
+
+    -moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+
+
+}
+
+.upgrade-paid-paln:hover {
+
+  background-position: 100% 0;
+    -moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.donate {
+  width: 90px;
+  background-image: linear-gradient(
+    to right,
+    rgb(109, 14, 117) 15%,
+    rgb(97, 108, 194) 85%
+  );
+}
+
+.donate:hover {
+  background-position: 100% 0;
+  -moz-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+.partners,
+.clients {
+  display: none;
+  color: rgb(92, 92, 92);
+
+}
+
+.contact,
+.information,
+.social-media {
+  margin: 1rem 1rem 1rem 1rem;
+}
+
+.contact > ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+.category {
+  font-family: TitilliumWeb;
+  font-size: 1rem;
+  font-weight: 600;
+  margin-top: 0.3rem;
+}
+
+.information {
+  font-family: TitilliumWeb;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.category-list > ul > li {
+  margin: 0.2rem;
+}
+
+.social-media-list {
+  font-family: TitilliumWeb;
+  font-size: 1rem;
+  padding: 0;
+  list-style-type: none;
+}
+
+.social-media-list li+li:before {
+  padding: 0 1rem 0 1rem;
+  color: white;
+  content: "/\00a0";
+}
+
+.social-media-list li:nth-child(even) {
+  display: none;
+}
+
+strong {
+  color: white;
+}
+
+footer {
+  background: rgb(96, 56, 112);
+  color: white;
+  padding: 1rem 0 1rem 0;
+  bottom: 0;
+}
+
+/********** screen min-width: 540px **********/
+
+@media screen and (min-width: 540px) {
+
+  .logo {
+    flex-direction: row;
+  }
+
+  .language {
+    width: 20rem;
+    margin-left: auto;
+    margin-right: 0;
+  }
+
+  .menu-list {
+    display: flex;
+    list-style-type: none;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background: none;
+  }
+
+  .menu-list > li {
+    display: flex;
+    flex: 1 0 auto;
+    justify-content: center;
+    border-radius: 28px;
+    padding: 0;
+    background: rgb(97, 108, 194);
+    margin: 0 .2rem 0 .2rem;
+  }
+
+  .menu-list > li > a {
+    display: block;
+    background: transparent;
+    font-family: TitilliumWeb;
+    font-size: 1rem;
+    color: white;
+    padding: 0.6em 1em;
+  }
+
+  .banner-section {
+    background-image: url("assets/img/background-img.png");
+    width: 100%;
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    left: 0;
+    right: 0;
+    }
+
+  .container-description {
+    width: 25rem;
+  }
+
+  .description-box {
+    margin: 2rem 0 2rem 0;
+    padding: 0 2rem 0 2rem;
+  }
+
+
+  /* container-description items */
+
+  .item-4 {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+
+  .item-5 {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 4;
+    grid-row-end: 5;
+  }
+
+  .item-6 {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 7;
+    grid-row-end: 8;
+  }
+
+  .title-box {
+    font-size: 1.4rem;
+  }
+
+  .subtitle-box {
+    font-size: 1rem;
+  }
+
+  .text-box {
+    display: flex;
+    font-size: 0.8rem;
+    color: rgb(176, 176, 176);
+  }
+
+  .physical-security-banner {
+    width: 25rem;
+    grid-template-rows: 50px auto 70px;
+  }
+
+  .banner-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .banner-text {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(154, 156, 156);
+  }
+
+  .banner-text > p {
+    text-align: left;
+    font-family: TitilliumWeb;
+    font-weight: 400;
+    font-size: 0.9rem;
+  }
+
+  .learn-more {
+    grid-row-start: 3;
+    grid-row-end: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .learn-more-button {
+    background-color: transparent;
+    border-radius: 28px;
+    border: 2px solid gray;
+    width: 280px;
+    height: 40px;
+    color: gray;
+    text-align: center;
+    text-decoration: none;
+  }
+
+  .support-buttons,
+  .store-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .quote,
+  .banner-section-store,
+  .banner-section-support {
+    width: 21rem;
+  }
+
+  .information {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    margin: 1rem 3rem 1rem 3rem;
+  }
+
+  .category-company {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    text-align: right;
+  }
+
+  .category-legal {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    text-align: right;
+  }
+
+  .category-neuromail {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    text-align: right;
+  }
+
+  .category-list > ul {
+    text-align: right;
+    direction: rtl;
+    padding-right: 1rem;
+  }
+
+  .contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem 3rem 1rem 3rem;
+  }
+
+  .contact > p {
+    margin-left: 4rem;
+  }
+
+  .social-media-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .social-media-list li:nth-child(even) {
+    display: initial;
+  }
+
+  .social-media > p {
+    text-align: center;
+  }
+}
+
+/********** screen min-width: 800px **********/
+
+@media screen and (min-width: 800px) {
+  .logo {
+    display: flex;
+    font-family: TitilliumWeb;
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+
+  .logo > span > p { 
+    font-size: 4rem;
+  }
+
+  .action-area {
+    display: flex;
+    justify-content: space-between;
+    font-family: TitilliumWeb;
+    font-size: 1rem;
+  }
+
+  .language {
+    width: 20rem;
+  }
+
+  .menu {
+    margin-right: auto;
+  }
+
+  .menu-list {
+    display: flex;
+    list-style-type: none;
+    flex-direction: row;
+    background: none;
+    width: 45rem;
+    margin: 0 0 0 1rem;
+  }
+
+  .menu-list > li {
+    display: flex;
+    justify-content: start;
+    flex: 1 0 auto;
+    text-align: start;
+    background: none;
+    color: black;
+    padding: 0;
+    margin: 0 .5rem 0  0;
+  }
+
+  .menu-list > li > a {
+    display: block;
+    background: transparent;
+    font-family: TitilliumWeb;
+    font-size: 1rem;
+    color: rgb(104, 99, 99);
+    padding: 0;
+    margin: 0;
+  }
+
+  .log {
+    padding-right: 0;
+    float: right;
+  }
+
+  .log-buttons {
+    display: flex;
+    width: 11.3rem;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .log-in {
+    background-color: transparent;
+    border: none;
+    width: 90px;
+    height: 40px;
+    color: gray;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+  }
+
+  .text-promo > h1 {
+    font-size: 3rem;
+    font-weight: 600;
+  }
+
+
+  .join-area {
+    margin: 1rem 7rem 1rem 9rem;  }
+
+  .physical-security-banner {
+    display: grid;
+    width: 600px;
+    margin: 3rem auto 3rem auto;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 50px 50px 50px;
+  }
+
+  .banner-title {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .banner-text {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    display: flex;
+    align-items: center;
+    padding: 0;
+  }
+
+  .banner-text > p {
+    text-align: left;
+    font-family: TitilliumWeb;
+    font-weight: 400;
+    font-size: 0.9rem;
+  }
+
+  .learn-more {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 3;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .learn-more-button {
+    background-color: transparent;
+    border-radius: 28px;
+    border: 2px solid gray;
+    width: 280px;
+    height: 40px;
+    color: gray;
+    text-align: center;
+    text-decoration: none;
+  }
+
+  .partners,
+  .clients {
+    display: unset;
+  }
+
+  .partners-list-img,
+  .clients-list-img {
+    width: 60%;
+    height: auto;
+  }
+
+  .partners {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .partners-list {
+    display: flex;
+    justify-content: center;
+  }
+
+  .clients {
+    width: 800px;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    justify-content: left;
+  }
+
+  .category-company,
+  .category-legal,
+  .category-neuromail {
+    margin-right: 2rem;
+  }
+
+  .category-list {
+    margin-right: 2rem;
+  }
+
+  .contact {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 1rem 1rem 1rem 1rem;
+  }
+
+  .information {
+    margin: 1rem 1rem 1rem 1rem;
+  }
+
+  .contact > p {
+    margin: 0;
+  }
+
+  .links-area {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 2rem 0 2rem;
+  }
+
+  .social-media-list li+li:before {
+    color: rgb(92, 92, 92);
+  }
+
+  .social-media {
+    width: 32rem;
+    padding: 0 2rem 0 2rem;
+  }
+
+  .social-media-list {
+    justify-content: space-between;
+  }
+
+  .social-media > p {
+    text-align: left;
+  }
+
+  footer {
+    background: none;
+    color: rgb(92, 92, 92);
+    padding: 1rem 0 1rem 0;
+    bottom: 0;
+  }
+
+  strong {
+    color: rgb(92, 92, 92);
+  }
+}
+
+/********** screen min-width: 1200px **********/
+
+@media screen and (min-width: 1200px) {
+  .menu-wide {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .logo {
+    font-size: 1rem;
+  }
+
+  .banner-section {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
+
+  .container-description {
+    width: 60rem;
+    height: auto;
+    display: grid;
+    margin-top: 5rem;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 1fr;
+    grid-column-gap: 2rem;
+    font-family: TitilliumWeb;
+    background: transparent;
+  }
+
+  .description-box {
+    display: grid;
+    grid-template-columns: 10rem, auto;
+    padding: 0;
+  }
+
+  /* container-description items */
+
+  .item-1 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+
+  .item-2 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+  }
+
+  .item-3 {
+    grid-column-start: 3;
+    grid-column-end: 4;
+  }
+
+  .item-4 {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+
+  .item-5 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+
+  .item-6 {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+
+  .icon-box {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    justify-self: center;
+    align-self: center;
+  }
+
+  .title-box {
+    font-size: 1.5rem;
+  }
+
+  .subtitle-box {
+    font-size: 1rem;
+  }
+
+  .clients {
+    width: 1200px;
+  }
+
+  footer {
+    width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+/********** screen min-width: 1400px **********/
+
+@media screen and (min-width: 1400px) {
+  .menu-wide {
+    width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+
+  }
+
+  .banner-section {
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
